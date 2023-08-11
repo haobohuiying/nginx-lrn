@@ -1,0 +1,2 @@
+#!/bin/bash
+/root/nginx/nginx-1.23.3/objs/nginx -c /root/nginx/append_prefix_filter_demo/nginx.conf

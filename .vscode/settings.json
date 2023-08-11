@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ngx_config.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "ngx_http_upstream_round_robin.h": "c",
+        "random": "c"
+    }
+}

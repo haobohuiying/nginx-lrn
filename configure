@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PREFIX=/root/nginx/nginx-bin
+cd ./nginx-1.23.3/
+SUBREQUEST_DEMO_MODULE_PATH=/root/nginx/subrequest_demo
+APPEND_PREFIX_FILTER_MODULE_PATH=/root/nginx/append_prefix_filter_demo
+./configure --sbin-path=$PREFIX/nginx \
+    --with-cc-opt='-g -O0' \
+    --conf-path=$PREFIX/nginx.conf \
+    --pid-path=$PREFIX/nginx.pid \
+    --with-openssl=../openssl-1.1.1t \
+    --with-openssl-opt=-d \
+    --with-http_ssl_module \
+    --with-debug \
+    --add-module=$SUBREQUEST_DEMO_MODULE_PATH \
+    --add-module=$APPEND_PREFIX_FILTER_MODULE_PATH \

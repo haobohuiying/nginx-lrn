@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ngx_config.h": "c",
+			"array": "c",
+			"string": "c",
+			"string_view": "c"
+		}
+	}
+}
